@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "GDC Lens: censoring-aware, cross-cohort evaluation of breast cancer prognostic models"
+type: software
+version: 1.0.0
+date-released: 2026-11-12
+license: MIT
+repository-code: "https://github.com/PRITIDIPADAS/gdclens"
+url: "https://pritidipadas.github.io/gdclens/"
+abstract: >-
+  Leave-one-site-out evaluation of a breast cancer Cox model on TCGA-BRCA (NCI Genomic Data Commons)
+  and five METABRIC cohorts, with censoring-aware measures, a label audit, local recalibration,
+  an evidence check for each estimate, and a browser tool for checking a centre's own patients.
+  Research use only.
+keywords:
+  - prognostic model
+  - external validation
+  - calibration
+  - censoring
+  - breast cancer
+  - Genomic Data Commons
+authors:
+  - family-names: Das
+    given-names: Pritidipa

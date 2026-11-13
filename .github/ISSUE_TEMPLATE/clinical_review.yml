@@ -1,0 +1,53 @@
+name: Clinical or statistical review
+description: Say what looks wrong, missing or unclear after using the site. No code needed.
+title: "Review: "
+labels: ["review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for looking. This is a research tool and not a medical device. A few sentences are enough.
+        The site is at https://pritidipadas.github.io/gdclens/ and a ten-minute checklist is in docs/EXPERT_SUPPORT.md.
+  - type: dropdown
+    id: page
+    attributes:
+      label: Which page did you look at?
+      options:
+        - Predict
+        - Evidence
+        - Label audit
+        - Hospital
+        - Live GDC
+        - Methods
+        - Documents in the repository
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Your background (optional)
+      options:
+        - Clinician
+        - Biostatistician or epidemiologist
+        - Machine learning or data science
+        - Researcher in another field
+        - Student
+        - Prefer not to say
+  - type: textarea
+    id: concern
+    attributes:
+      label: What looks wrong, missing or unclear?
+      description: A number that seems implausible, a clinical input that is missing, wording that would mislead, a method you would change.
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: What would you change or add first?
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Before you send
+      options:
+        - label: I have not included any patient data.
+          required: true

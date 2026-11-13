@@ -1,0 +1,9 @@
+step,patients
+patients in source files,3607
+no survival time/status,530
+follow-up time not positive,22
+age missing,46
+"pT missing, Tis or TX",98
+pN missing or NX,82
+metastatic at diagnosis (M1),16
+neoadjuvant therapy (pT/pN post-treatment),2

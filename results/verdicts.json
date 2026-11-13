@@ -1,0 +1,85 @@
+{
+ "H1": {
+  "status": "supported",
+  "title": "Binary labels misstate mortality when follow-up is short",
+  "headline": "In TCGA (median follow-up 30 months, 56% of patients with unknown 36-month status) censored-as-alive gives 3.8% against a Kaplan-Meier 6.1% at 36 months (bias -2.3 points, 95% CI -3.3 to -1.5); dropping censored patients gives 8.6%. At 60 months: 5.9% and 20.8% against 12.8%. In METABRIC the 36-month bias is -0.15 points.",
+  "numbers": {
+   "tcga_km36": 0.060864698411532,
+   "tcga_naive36": 0.0377969762419006,
+   "tcga_drop36": 0.0862068965517241,
+   "tcga_naive60": 0.0593952483801295,
+   "tcga_km60": 0.1283735811571962,
+   "tcga_drop60": 0.2075471698113207,
+   "met_bias36": -0.0014584485626898
+  }
+ },
+ "H2": {
+  "status": "supported",
+  "title": "Discrimination transports; calibration-in-the-large does not",
+  "headline": "Held-out Uno C 0.693 (95% CI 0.654-0.731; prediction interval 0.621-0.764). Calibration slope 0.94 (prediction interval 0.68-1.20). Observed/expected 36-month mortality pools to 1.03 but varies from site to site: I-squared 81%, prediction interval 0.40-2.66.",
+  "numbers": {
+   "c": 0.6925831524565909,
+   "c_lo": 0.6542373168159458,
+   "c_hi": 0.7309289880972359,
+   "slope": 0.943418537657956,
+   "slope_pi_lo": 0.6821926117353128,
+   "slope_pi_hi": 1.204644463580599,
+   "oe": 1.026133691285799,
+   "oe_i2": 0.8087194846024214,
+   "oe_pi_lo": 0.3958136244285907,
+   "oe_pi_hi": 2.660217555451489
+  }
+ },
+ "H3": {
+  "status": "partly supported",
+  "title": "Re-estimating one scalar locally reduces calibration error",
+  "headline": "With 100 local patients the 36-month error fell in TCGA, M2 (TCGA 5.8 to 2.7 points; M2 3.9 to 2.7 points) and rose in M1, M3, M4, M5, where the transported model was already close (M1 1.0 to 2.8; M3 1.7 to 2.1; M4 1.5 to 2.6; M5 2.5 to 4.3). The estimate is noisy because only a handful of deaths occur by 36 months in 100 patients.",
+  "numbers": {
+   "improved": [
+    "TCGA",
+    "M2"
+   ],
+   "worsened": [
+    "M1",
+    "M3",
+    "M4",
+    "M5"
+   ]
+  }
+ },
+ "H4": {
+  "status": "not supported",
+  "title": "Passport verdicts identify where calibration fails",
+  "headline": "Absolute calibration gap in ABSTAIN minus SHOW groups: 2.0 points (permutation p = 0.40); CAUTION minus SHOW: 0.5 points (p = 0.81). The verdicts describe how much evidence exists, not where the model is wrong.",
+  "numbers": {
+   "ABSTAIN": {
+    "stat": 0.019855354328658602,
+    "p": 0.3986013986013986,
+    "sites": 6,
+    "null_mean": 0.01704129731028275
+   },
+   "SHOW WITH CAUTION": {
+    "stat": 0.00461625965035212,
+    "p": 0.8081918081918081,
+    "sites": 6,
+    "null_mean": 0.014147084814636394
+   }
+  }
+ },
+ "H5": {
+  "status": "supported",
+  "title": "A risk threshold chosen on other sites keeps false reassurance within 5%",
+  "headline": "Observed 36-month mortality among reassured patients was at or below 5% in 5 of 6 held-out sites (range 0.0-5.9%), with coverage 21-62%. With the minimum set size fixed in the plan (100 patients) no threshold could be certified in 4 of 6 folds.",
+  "numbers": {
+   "sites_ok": [
+    "TCGA",
+    "M1",
+    "M2",
+    "M4",
+    "M5"
+   ],
+   "km_min": 0.0,
+   "km_max": 0.0585151989218891
+  }
+ }
+}

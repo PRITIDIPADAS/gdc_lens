@@ -1,0 +1,19 @@
+[project]
+name = "gdclens"
+version = "1.0.0"
+description = "GDC Lens: censoring-aware, cross-cohort evaluation of breast cancer prognostic models, with per-patient evidence checks."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Pritidipa Das" }]
+dependencies = ["numpy>=1.26", "pandas>=2.1", "scipy>=1.11", "scikit-survival>=0.23", "scikit-learn>=1.4", "requests>=2.31"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "lifelines>=0.29", "statsmodels>=0.14"]
+
+[tool.setuptools]
+packages = ["gdclens"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
