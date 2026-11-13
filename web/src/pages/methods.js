@@ -5,7 +5,7 @@ import { table, section, note, scrollable } from '../lib/ui.js';
 import { auditGrid, maxRiskDifference, RULE_TEXT } from '../lib/audit.js';
 import { GUIDANCE } from '../lib/guidance.js';
 
-const REPO = 'https://github.com/PRITIDIPADAS/gdclens';
+const REPO = 'https://github.com/PRITIDIPADAS/gdc_lens';
 const TERM = {
   age: 'Age, linear part', age_nl1: 'Age, spline term 1', age_nl2: 'Age, spline term 2',
   'T>=2': 'pT 2 or higher', 'T>=3': 'pT 3 or 4 (further step)', 'N>=1': 'pN 1 or higher', 'N>=2': 'pN 2 or higher (further step)', 'N>=3': 'pN 3 (further step)',
@@ -147,6 +147,6 @@ export async function render(root) {
       h('p', { class: 'small' }, 'Details: ', h('a', { href: `${REPO}/blob/main/docs/DEVIATIONS.md`, rel: 'noopener', target: '_blank', text: 'docs/DEVIATIONS.md' }), ' and ', h('a', { href: `${REPO}/blob/main/docs/ANALYSIS_PLAN.md`, rel: 'noopener', target: '_blank', text: 'docs/ANALYSIS_PLAN.md' }), '.')),
     guidanceSection(),
     section('reproduce', 'Reproduce everything', null, h('div', { class: 'stack' },
-      scrollable(h('pre', {}, h('code', { text: `git clone ${REPO}\ncd gdclens\npip install -e ".[dev]"\npython scripts/fetch_data.py   # GDC and cBioPortal tables\npython scripts/run_all.py      # all analyses, writes results/\npython scripts/export_web.py   # writes the data the site loads\ncd web && npm ci && npm test && npm run build` })), 'Commands to reproduce everything'),
+      scrollable(h('pre', {}, h('code', { text: `git clone ${REPO}\ncd gdc_lens\npip install -e ".[dev]"\npython scripts/fetch_data.py   # GDC and cBioPortal tables\npython scripts/run_all.py      # all analyses, writes results/\npython scripts/export_web.py   # writes the data the site loads\ncd web && npm ci && npm test && npm run build` })), 'Commands to reproduce everything'),
       h('p', { class: 'small ink2', text: 'Seeds are fixed. The Python and the browser code are checked against each other by the test suite.' })))));
 }

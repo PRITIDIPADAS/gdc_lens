@@ -42,11 +42,11 @@ function buildChrome() {
   top.append(h('div', { class: 'top-in' },
     h('a', { class: 'brand', href: `#/${DEFAULT}`, 'aria-label': `${NAME}, home` }, lens(), h('span', { class: 'brand-word', text: NAME })),
     nav, h('div', { class: 'tools' },
-      h('a', { class: 'btn quiet', href: 'https://github.com/PRITIDIPADAS/gdclens', target: '_blank', rel: 'noopener', text: 'Code' }), themeBtn)));
+      h('a', { class: 'btn quiet', href: 'https://github.com/PRITIDIPADAS/gdc_lens', target: '_blank', rel: 'noopener', text: 'Code' }), themeBtn)));
   document.getElementById('foot').append(h('div', { class: 'foot-in' },
     h('p', {}, 'Research use only. GDC Lens is not a medical device and its estimates are not for decisions about individual patients.'),
     h('p', {}, 'Data: NCI Genomic Data Commons (TCGA-BRCA, release 46) and METABRIC through cBioPortal. Everything on these pages runs in your browser; nothing you enter is sent anywhere, except the Live GDC page, which reads public cases from the GDC.'),
-    h('p', {}, 'Code, analysis plan and deviations: ', h('a', { href: 'https://github.com/PRITIDIPADAS/gdclens', target: '_blank', rel: 'noopener', text: 'github.com/PRITIDIPADAS/gdclens' }), '. MIT licence. Fonts: Inter, Fraunces and JetBrains Mono (SIL Open Font License).')));
+    h('p', {}, 'Code, analysis plan and deviations: ', h('a', { href: 'https://github.com/PRITIDIPADAS/gdc_lens', target: '_blank', rel: 'noopener', text: 'github.com/PRITIDIPADAS/gdc_lens' }), '. MIT licence. Fonts: Inter, Fraunces and JetBrains Mono (SIL Open Font License).')));
 }
 
 function parseHash() {

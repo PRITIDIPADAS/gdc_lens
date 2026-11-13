@@ -5,8 +5,8 @@ type: software
 version: 1.0.0
 date-released: 2026-11-12
 license: MIT
-repository-code: "https://github.com/PRITIDIPADAS/gdclens"
-url: "https://pritidipadas.github.io/gdclens/"
+repository-code: "https://github.com/PRITIDIPADAS/gdc_lens"
+url: "https://pritidipadas.github.io/gdc_lens/"
 abstract: >-
   Leave-one-site-out evaluation of a breast cancer Cox model on TCGA-BRCA (NCI Genomic Data Commons)
   and five METABRIC cohorts, with censoring-aware measures, a label audit, local recalibration,

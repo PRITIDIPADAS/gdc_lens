@@ -6,7 +6,7 @@ GDC Lens answers with open data: TCGA-BRCA from the NCI Genomic Data Commons and
 
 > **Research use only.** Not a medical device. Not for decisions about individual patients. Not validated prospectively.
 
-**Site:** <https://pritidipadas.github.io/gdclens/>
+**Site:** <https://pritidipadas.github.io/gdc_lens/>
 
 | Page | What it does |
 | :--- | :--- |
@@ -52,8 +52,8 @@ Negative and partial results are reported as such. Each hypothesis and its crite
 ## Run it
 
 ```bash
-git clone https://github.com/PRITIDIPADAS/gdclens
-cd gdclens
+git clone https://github.com/PRITIDIPADAS/gdc_lens
+cd gdc_lens
 pip install -e ".[dev]"
 python -m pytest                 # Python tests
 python scripts/fetch_data.py     # optional: download the source tables again (public data)
@@ -88,7 +88,7 @@ The cohorts are older and retrospective, treatment is not modelled, the model ha
 
 ## Feedback
 
-Use the [clinical or statistical review form](https://github.com/PRITIDIPADAS/gdclens/issues/new/choose), or the ten-minute checklist in [docs/EXPERT_SUPPORT.md](docs/EXPERT_SUPPORT.md).
+Use the [clinical or statistical review form](https://github.com/PRITIDIPADAS/gdc_lens/issues/new/choose), or the ten-minute checklist in [docs/EXPERT_SUPPORT.md](docs/EXPERT_SUPPORT.md).
 
 ## Cite and licence
 

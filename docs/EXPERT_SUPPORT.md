@@ -146,7 +146,7 @@ Used here: docs/TRIPOD_PROBAST.md maps each reporting and appraisal item to wher
 
 All of these are public and asynchronous.
 
-1. **A public issue on the repository.** Anyone with a GitHub account can use the *Clinical or statistical review* form: <https://github.com/PRITIDIPADAS/gdclens/issues/new/choose>. It asks which page was read and what looked wrong, missing or unclear.
+1. **A public issue on the repository.** Anyone with a GitHub account can use the *Clinical or statistical review* form: <https://github.com/PRITIDIPADAS/gdc_lens/issues/new/choose>. It asks which page was read and what looked wrong, missing or unclear.
 2. **A thread on Datamethods**, a public discussion site for biostatistics and clinical prediction models run by Frank Harrell (<https://discourse.datamethods.org/>, described at <https://fharrell.com/post/disc/>). A ready-to-paste post is below. Ask a methods question, not for an endorsement.
 3. **A question on Cross Validated** (<https://stats.stackexchange.com/>) for a single technical point, such as how the local factor interval is built.
 4. **The reviewer checklist below**, sent with the site address to whoever supervises the project. It is written so that a clinician can finish it in ten minutes without reading the code.
@@ -166,7 +166,7 @@ All of these are public and asynchronous.
 >
 > I built a small open-source evaluation of a Cox model (age, pT, pN, ER, PR, HER2) on TCGA-BRCA from the NCI Genomic Data Commons and five METABRIC cohorts, 2,811 patients. Each of the six sites is held out in turn. Ranking transports (pooled Uno C 0.69, prediction interval 0.62 to 0.76). The level of risk does not: observed over expected deaths at 3 years pools to 1.03 but the prediction interval is 0.40 to 2.66 (I-squared 81%). A one-number local factor helped in two of six sites and hurt in four where the model was already close. A per-profile evidence check did not predict where calibration failed. Censored patients are never treated as survivors; a label audit shows what that shortcut does to 3-year mortality in short follow-up data.
 >
-> Everything runs in the browser, including a hospital page where a CSV never leaves the tab. Code, analysis plan written before the cross-site results, and a log of deviations: <https://github.com/PRITIDIPADAS/gdclens>. Research use only.
+> Everything runs in the browser, including a hospital page where a CSV never leaves the tab. Code, analysis plan written before the cross-site results, and a log of deviations: <https://github.com/PRITIDIPADAS/gdc_lens>. Research use only.
 >
 > Questions: (1) is leave-one-site-out across academic cohorts a fair stand-in for a new hospital? (2) is a single scalar on the baseline hazard sensible with 100 to 400 local patients? (3) how should an abstain rule that describes evidence, not accuracy, be presented? (4) what is the first thing you would change?
 

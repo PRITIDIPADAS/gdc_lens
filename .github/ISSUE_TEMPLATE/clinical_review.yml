@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Thank you for looking. This is a research tool and not a medical device. A few sentences are enough.
-        The site is at https://pritidipadas.github.io/gdclens/ and a ten-minute checklist is in docs/EXPERT_SUPPORT.md.
+        The site is at https://pritidipadas.github.io/gdc_lens/ and a ten-minute checklist is in docs/EXPERT_SUPPORT.md.
   - type: dropdown
     id: page
     attributes:
